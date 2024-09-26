@@ -14,15 +14,15 @@
     class="bg-gradient-to-b from-blue-300 via-pink-300 to-purple-300 h-screen flex justify-center items-center"
   >
     <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg w-4/6 text-white">
-      <div class="flex items-center justify-between mb-4">
+      <div id="form" class="flex items-center justify-between mb-4 ">
         <input
-        
+          id="inputt"
           type="text"
           placeholder="Enter location..."
           class="p-2 rounded-full bg-gray-100 text-black w-full"
         />
-        <div class="">
-          <button  class="bg-blue-500 ml-2">
+        <div >
+          <button type="submit" class="bg-blue-500 ml-2 " id="btn">
             <i class="fa-solid fa-magnifying-glass text-4xl ml-2"></i>
           </button>
         </div>
@@ -30,14 +30,14 @@
 
       <!-- Main Weather Info -->
       <div class="flex justify-between items-center">
-        <div>
+        <div >
           <h2 class="text-5xl font-bold" id="code"></h2>
           <p class="text-lg mt-2" id="locatio"></p>
           <div class=" mt-1">
             <img
               src=""
               alt="Weather Icon"
-              class="w-32 h-32   mr-2
+              class="w-32 h-32   
               "
               id="icons"
             />
@@ -45,10 +45,13 @@
           </div>
         </div>
         <div class="text-right">
-          <p class="text-6xl font-bold" id="temps"></p>
-          <p class="text-xl">°C/°F</p>
-          <div class="grid items-col"><div><p class="text-sm mt-2">min:<h2 id="mins"></h2></p></div><div><p>/max:<h2 id="maxs"></h2></p></div></div>
-          <button class="mt-4 px-4 py-2 bg-blue-500 rounded-full">
+          <div class="flex"><p class="text-6xl font-bold" id="temps"></p>
+            <p class="text-xl">°C/°F</p></div>
+            <div class="flex"><p class="text-sm mt-2 gap-4"></p>
+              <p>min:<h2 id="mins"></h2></p>
+              <p>/max:
+              <h2 id="maxs"></h2></p></div>
+          <button class="mt-4 px-11 py-2 mr-8 bg-blue-500 rounded-full">
             SEE FORECAST
           </button>
         </div>
@@ -63,13 +66,13 @@
         </div>
         <div>
           <p class="text-xl">WindSpeed :</p>
-          <p class="text-2xl mt-2" id="wind"></p>
-<p class="text-2xl mt-2">km/hr</p>
+          <div class="flex"><p class="text-2xl mt-2" id="wind"></p>
+            <p class="text-2xl mt-2">km/hr</p></div>
         </div>
         <div>
           <p class="text-xl" >Pressure :</p>
-          <p class="text-2xl mt-2" id="pressur"></p>
-          <p class="text-2xl mt-2">pa</p>
+          <div class="flex"><p class="text-2xl mt-2" id="pressur"></p>
+            <p class="text-2xl mt-2">pa</p></div>
         </div>
       </div>
     </div>
